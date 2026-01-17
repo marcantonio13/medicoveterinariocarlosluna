@@ -1,0 +1,92 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%; /* que el body ocupe toda la pantalla */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Contenedor principal */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* ocupa toda la altura de la ventana */
+}
+
+/* Encabezado */
+.header {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Contenido principal */
+.main {
+  flex: 1; /* ocupa todo el espacio disponible entre header y footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centra verticalmente */
+  align-items: center;     /* centra horizontalmente */
+  padding: 2rem;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Botón */
+.btn {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: block;   /* el botón ocupa toda la línea */
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+
+/* Pie de página */
+.footer {
+  background-color: #eeeeee;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 📱 Responsividad */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header h2 {
+    font-size: 1rem;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1rem;
+  }
+}
