@@ -1,9 +1,9 @@
 {
-  "name": "pagina-medicoveterinario-carlosluna",
+  "name": "medicoveterinariocarlosluna",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://marcoflores.github.io/pagina-medicoveterinario-carlosluna",
+  "homepage": "https://marcantonio13.github.io/medicoveterinariocarlosluna",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
